@@ -4,7 +4,9 @@
   "version": "${version}",
   "name": "GlobalAdvancements",
   "description": "Bedrock/LCE style advancements for Minecraft Java",
-  "authors": [],
+  "authors": [
+    "RedRain0o0"
+  ],
   "contact": {},
   "license": "MIT",
   "icon": "assets/globaladvancements/icon.png",
