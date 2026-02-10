@@ -1,11 +1,16 @@
 {
   "required": true,
   "minVersion": "0.8",
+  "mixinextras": {
+    "minVersion": "0.5.0"
+  },
   "package": "io.github.redrain0o0.globaladvancements.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "PlayerMixin"
   ],
   "client": [
+    "client.TitleScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
