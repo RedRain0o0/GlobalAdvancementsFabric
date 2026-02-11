@@ -10,6 +10,8 @@
     "PlayerMixin"
   ],
   "client": [
+    "client.CreateWorldScreenMixin",
+    "client.PauseScreenMixin",
     "client.TitleScreenMixin"
   ],
   "injectors": {
