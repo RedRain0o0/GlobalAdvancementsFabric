@@ -13,6 +13,7 @@ import java.io.Writer;
 
 public class GlobaladvancementsClient implements ClientModInitializer {
     private static File advancements;
+    private static File statistics;
     private static Gson gson;
 
     @Override
@@ -32,6 +33,21 @@ public class GlobaladvancementsClient implements ClientModInitializer {
             }
         } catch (IOException e) {
             Globaladvancements.LOGGER.error("Error handling advancements file: " + e);
+        }
+
+        // Create new Statistics file if it doesnt exist
+        try {
+            statistics = new File(FabricLoader.getInstance().getGameDir() + "/statistics.json");
+            if (!statistics.exists()) {
+                Globaladvancements.LOGGER.info("Statistics file not found, creating new one");
+                statistics.createNewFile();
+                try (Writer writer = new FileWriter(statistics)) {
+                    String defaultFileContents = "{\"stats\":{},\"DataVersion\":4556}";
+                    writer.write(defaultFileContents);
+                }
+            }
+        } catch (IOException e) {
+            Globaladvancements.LOGGER.error("Error handling statistics file: " + e);
         }
     }
 
