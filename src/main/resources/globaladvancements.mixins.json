@@ -7,6 +7,7 @@
   "package": "io.github.redrain0o0.globaladvancements.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "PlayerAdvancementsMixin",
     "PlayerMixin"
   ],
   "client": [
