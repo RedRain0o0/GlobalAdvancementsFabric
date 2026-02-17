@@ -1,14 +1,16 @@
 {
   "parent": "minecraft:nether/root",
-  "description": {
-    "translate": "advancements.nether.fast_travel.description"
-  },
-  "frame": "challenge",
-  "icon": {
-    "count": 1,
-    "id": "minecraft:map"
-  },
-  "title": {
-    "translate": "advancements.nether.fast_travel.title"
+  "display": {
+    "description": {
+      "translate": "advancements.nether.fast_travel.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:map"
+    },
+    "title": {
+      "translate": "advancements.nether.fast_travel.title"
+    }
   }
 }

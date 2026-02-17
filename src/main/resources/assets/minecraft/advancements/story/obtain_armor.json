@@ -1,13 +1,15 @@
 {
   "parent": "minecraft:story/smelt_iron",
-  "description": {
-    "translate": "advancements.story.obtain_armor.description"
-  },
-  "icon": {
-    "count": 1,
-    "id": "minecraft:iron_chestplate"
-  },
-  "title": {
-    "translate": "advancements.story.obtain_armor.title"
+  "display": {
+    "description": {
+      "translate": "advancements.story.obtain_armor.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:iron_chestplate"
+    },
+    "title": {
+      "translate": "advancements.story.obtain_armor.title"
+    }
   }
 }

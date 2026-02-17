@@ -1,13 +1,15 @@
 {
   "parent": "minecraft:husbandry/safely_harvest_honey",
-  "description": {
-    "translate": "advancements.husbandry.wax_on.description"
-  },
-  "icon": {
-    "count": 1,
-    "id": "minecraft:honeycomb"
-  },
-  "title": {
-    "translate": "advancements.husbandry.wax_on.title"
+  "display": {
+    "description": {
+      "translate": "advancements.husbandry.wax_on.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:honeycomb"
+    },
+    "title": {
+      "translate": "advancements.husbandry.wax_on.title"
+    }
   }
 }
