@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:story/obtain_armor",
+  "description": {
+    "translate": "advancements.story.deflect_arrow.description"
+  },
+  "icon": {
+    "count": 1,
+    "id": "minecraft:shield"
+  },
+  "title": {
+    "translate": "advancements.story.deflect_arrow.title"
+  }
+}

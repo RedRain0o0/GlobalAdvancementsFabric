@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:story/smelt_iron",
+  "description": {
+    "translate": "advancements.story.iron_tools.description"
+  },
+  "icon": {
+    "count": 1,
+    "id": "minecraft:iron_pickaxe"
+  },
+  "title": {
+    "translate": "advancements.story.iron_tools.title"
+  }
+}
