@@ -19,6 +19,36 @@ fabricApi {
 
 repositories {
     mavenCentral()
+    maven {
+        url "https://maven.isxander.dev/releases"
+    }
+    maven {
+        name = "Terraformers"
+        url = "https://maven.terraformersmc.com/"
+    }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Kyubion Studios"
+                url = "https://raw.githubusercontent.com/Kyubion-Studios/Mod-Resources/refs/heads/main/maven/"
+            }
+        }
+        filter {
+            includeGroupAndSubgroups "wily"
+        }
+    }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+    mavenLocal()
 }
 
 dependencies {
@@ -27,6 +57,8 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modCompileOnly("wily.legacy:legacy-fabric:${project.legacy_version}")
+    modCompileOnly("maven.modrinth:minimega:${project.minimega_version}")
 }
 
 processResources {
